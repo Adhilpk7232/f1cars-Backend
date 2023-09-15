@@ -28,16 +28,6 @@ app.use(cors({
 app.use(cookieParese())
 app.use(express.json())
 
-// mongoose.connect("mongodb://localhost:27017/f1cars", {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// })
-// .then(() => {
-//   console.log('Connected to MongoDB');
-// })
-// .catch((error) => {
-//   console.error('Error connecting to MongoDB:', error);
-// });
 const userRouter = require('./routes/userRoute')
 app.use('/',userRouter)
 
